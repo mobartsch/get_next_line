@@ -78,7 +78,7 @@ char	*from_nl(char *rest)
 char	*get_next_line(int fd)
 {
 	char		*output;
-	static char	*rest[9999];
+	static char	*rest[1024];
 
 	if (BUFFER_SIZE <= 0 || fd < 0)
 	{
